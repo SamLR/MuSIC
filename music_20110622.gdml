@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gdml xmlns:gdml_simple_extension="http://www.example.org"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"          
+    xs:noNamespaceSchemaLocation="./SimpleExtensionSchema/SimpleExtension.xsd"> 
+    <materials>
+
+        <element name="Argon_e" Z="18.0" N="40" >
+            <atom type="A" unit="g/mol" value="39.9480" />
+        </element>
+
+        <element  name="Nitrogen_e"  Z="7.0"  N="14" >
+            <atom type="A" unit="g/mol" value=" 14.0100" />
+        </element>
+
+        <element  name="Oxygen_e"  Z="8.0"  N="16" >
+            <atom type="A" unit="g/mol" value=" 16.0000" />
+        </element>
+
+        <!-- materials -->
+        <material  name="Air"  >
+            <D type="density" unit="g/cm3" value="0.0012"/>
+            <fraction n="0.7803"  ref="Nitrogen_e"/>
+            <fraction n="0.2103"  ref="Oxygen_e"/>
+            <fraction n="0.0094"  ref="Argon_e"/>
+        </material>
+    </materials>
+<solids>
+   <cone name="world" rmin1="0" rmax1="5000" rmin2="0" rmax2="5000" z="5000" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_eo" rmin1="331.0" rmax1="351" rmin2="331.0" rmax2="351" z="110" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_ei" rmin1="271.0" rmax1="331" rmin2="271.0" rmax2="331" z="150" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_01" rmin1="260.0" rmax1="360" rmin2="260.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_02" rmin1="240.0" rmax1="360" rmin2="240.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_03" rmin1="220.0" rmax1="360" rmin2="220.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_04" rmin1="200.0" rmax1="360" rmin2="200.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_05" rmin1="180.0" rmax1="360" rmin2="180.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_06" rmin1="160.0" rmax1="360" rmin2="160.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_07" rmin1="140.0" rmax1="360" rmin2="140.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_08" rmin1="120.0" rmax1="360" rmin2="120.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_09" rmin1="100.0" rmax1="360" rmin2="100.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_10" rmin1="100.0" rmax1="360" rmin2="100.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_11" rmin1="100.0" rmax1="360" rmin2="100.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_12" rmin1="142.5" rmax1="360" rmin2="142.5" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_13" rmin1="185.0" rmax1="360" rmin2="185.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_14" rmin1="227.5" rmax1="360" rmin2="227.5" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_15" rmin1="270.0" rmax1="360" rmin2="270.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_16" rmin1="270.0" rmax1="360" rmin2="270.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_17" rmin1="270.0" rmax1="360" rmin2="270.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_18" rmin1="270.0" rmax1="360" rmin2="270.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_19" rmin1="270.0" rmax1="360" rmin2="270.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_20" rmin1="270.0" rmax1="360" rmin2="270.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_21" rmin1="270.0" rmax1="360" rmin2="270.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_shield_22" rmin1="270.0" rmax1="360" rmin2="270.0" rmax2="360" z="50" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_outer" rmin1="370" rmax1="650" rmin2="370" rmax2="650" z="1470" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_endcap_du" rmin1="375" rmax1="450" rmin2="375" rmax2="450" z="30" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_endcap_dd" rmin1="0" rmax1="450" rmin2="0" rmax2="450" z="26" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_endcap_uu" rmin1="0" rmax1="375" rmin2="0" rmax2="375" z="10" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_endcap_ud" rmin1="0" rmax1="370" rmin2="0" rmax2="370" z="25" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_du1" rmin1="0" rmax1="46.0" rmin2="0" rmax2="46.0" z="26" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_du2" rmin1="0" rmax1="46.0" rmin2="0" rmax2="46.0" z="26" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_du3" rmin1="0" rmax1="46.0" rmin2="0" rmax2="46.0" z="26" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_dd1" rmin1="0" rmax1="44.5" rmin2="0" rmax2="44.5" z="60" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_dd2" rmin1="0" rmax1="44.5" rmin2="0" rmax2="44.5" z="60" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_dd3" rmin1="0" rmax1="44.5" rmin2="0" rmax2="44.5" z="60" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_uu1" rmin1="0" rmax1="44.5" rmin2="0" rmax2="44.5" z="60" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_uu2" rmin1="0" rmax1="44.5" rmin2="0" rmax2="44.5" z="60" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_uu3" rmin1="0" rmax1="44.5" rmin2="0" rmax2="44.5" z="60" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_ud1" rmin1="0" rmax1="46.0" rmin2="0" rmax2="46.0" z="36" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_ud2" rmin1="0" rmax1="46.0" rmin2="0" rmax2="46.0" z="36" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_knob_ud3" rmin1="0" rmax1="46.0" rmin2="0" rmax2="46.0" z="36" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port1_1" rmin1="0.0" rmax1="117.5" rmin2="0.0" rmax2="117.5" z="12.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port1_2" rmin1="0.0" rmax1="117.5" rmin2="0.0" rmax2="117.5" z="12.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port1_3" rmin1="0.0" rmax1="100.0" rmin2="0.0" rmax2="100.0" z="54.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <union name="capsol_port1_12"><first ref="capsol_port1_1"/><second ref="capsol_port1_2"/><position name="capsol_port1_12_pos" z="12.0"/></union>
+   <union name="capsol_port1_123"><first ref="capsol_port1_12"/><second ref="capsol_port1_3"/><position name="capsol_port1_123_pos" z="45.0"/></union>
+   <box name="capsol_port1_box" x="1000" y="1000" z="144.0" lunit="mm"/>
+   <intersection name="capsol_port1"><first ref="capsol_port1_123"/><second ref="capsol_port1_box"/><rotation name="capsol_port1_in_rot" x="0.0" y="-0.0" unit="deg"/></intersection>
+   <cone name="capsol_port2_1" rmin1="0.0" rmax1="126.5" rmin2="0.0" rmax2="126.5" z="16.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port2_2" rmin1="0.0" rmax1="126.5" rmin2="0.0" rmax2="126.5" z="16.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port2_3" rmin1="0.0" rmax1="101.5" rmin2="0.0" rmax2="101.5" z="113.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <union name="capsol_port2_12"><first ref="capsol_port2_1"/><second ref="capsol_port2_2"/><position name="capsol_port2_12_pos" z="16.0"/></union>
+   <union name="capsol_port2_123"><first ref="capsol_port2_12"/><second ref="capsol_port2_3"/><position name="capsol_port2_123_pos" z="80.5"/></union>
+   <box name="capsol_port2_box" x="1000" y="1000" z="238.003013698309" lunit="mm"/>
+   <intersection name="capsol_port2"><first ref="capsol_port2_123"/><second ref="capsol_port2_box"/><rotation name="capsol_port2_in_rot" x="0.0" y="-8.99999430495698" unit="deg"/></intersection>
+   <cone name="capsol_port3_1" rmin1="0.0" rmax1="92.5" rmin2="0.0" rmax2="92.5" z="12.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port3_2" rmin1="0.0" rmax1="92.5" rmin2="0.0" rmax2="92.5" z="12.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port3_3" rmin1="0.0" rmax1="57.15" rmin2="0.0" rmax2="57.15" z="88.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <union name="capsol_port3_12"><first ref="capsol_port3_1"/><second ref="capsol_port3_2"/><position name="capsol_port3_12_pos" z="12.0"/></union>
+   <union name="capsol_port3_123"><first ref="capsol_port3_12"/><second ref="capsol_port3_3"/><position name="capsol_port3_123_pos" z="62.0"/></union>
+   <box name="capsol_port3_box" x="1000" y="1000" z="212.0" lunit="mm"/>
+   <intersection name="capsol_port3"><first ref="capsol_port3_123"/><second ref="capsol_port3_box"/><rotation name="capsol_port3_in_rot" x="0.0" y="-0.0" unit="deg"/></intersection>
+   <cone name="capsol_port4_1" rmin1="0.0" rmax1="153.0" rmin2="0.0" rmax2="153.0" z="27.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port4_2" rmin1="0.0" rmax1="153.0" rmin2="0.0" rmax2="153.0" z="27.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port4_3" rmin1="0.0" rmax1="82.6" rmin2="0.0" rmax2="82.6" z="300.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <union name="capsol_port4_12"><first ref="capsol_port4_1"/><second ref="capsol_port4_2"/><position name="capsol_port4_12_pos" z="27.0"/></union>
+   <union name="capsol_port4_123"><first ref="capsol_port4_12"/><second ref="capsol_port4_3"/><position name="capsol_port4_123_pos" z="190.5"/></union>
+   <box name="capsol_port4_box" x="1000" y="1000" z="416.704877223937" lunit="mm"/>
+   <intersection name="capsol_port4"><first ref="capsol_port4_123"/><second ref="capsol_port4_box"/><rotation name="capsol_port4_in_rot" x="18.9999873401372" y="9.84478888419375" unit="deg"/></intersection>
+   <cone name="capsol_port5_1" rmin1="0.0" rmax1="76.0" rmin2="0.0" rmax2="76.0" z="20.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port5_2" rmin1="0.0" rmax1="76.0" rmin2="0.0" rmax2="76.0" z="20.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port5_3" rmin1="0.0" rmax1="35.0" rmin2="0.0" rmax2="35.0" z="300.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <union name="capsol_port5_12"><first ref="capsol_port5_1"/><second ref="capsol_port5_2"/><position name="capsol_port5_12_pos" z="20.0"/></union>
+   <union name="capsol_port5_123"><first ref="capsol_port5_12"/><second ref="capsol_port5_3"/><position name="capsol_port5_123_pos" z="180.0"/></union>
+   <box name="capsol_port5_box" x="1000" y="1000" z="216.456323920788" lunit="mm"/>
+   <intersection name="capsol_port5"><first ref="capsol_port5_123"/><second ref="capsol_port5_box"/><rotation name="capsol_port5_in_rot" x="180.0" y="-22.0000077401778" unit="deg"/></intersection>
+   <cone name="capsol_port6_1" rmin1="0.0" rmax1="76.0" rmin2="0.0" rmax2="76.0" z="20.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port6_2" rmin1="0.0" rmax1="76.0" rmin2="0.0" rmax2="76.0" z="20.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <cone name="capsol_port6_3" rmin1="0.0" rmax1="35.0" rmin2="0.0" rmax2="35.0" z="300.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <union name="capsol_port6_12"><first ref="capsol_port6_1"/><second ref="capsol_port6_2"/><position name="capsol_port6_12_pos" z="20.0"/></union>
+   <union name="capsol_port6_123"><first ref="capsol_port6_12"/><second ref="capsol_port6_3"/><position name="capsol_port6_123_pos" z="180.0"/></union>
+   <box name="capsol_port6_box" x="1000" y="1000" z="129.997716982811" lunit="mm"/>
+   <intersection name="capsol_port6"><first ref="capsol_port6_123"/><second ref="capsol_port6_box"/><rotation name="capsol_port6_in_rot" x="194.548244832596" y="-13.7707206105563" unit="deg"/></intersection>
+   <box name="capsol_yoke_b1" x="2140" y="2140" z="1590.0" lunit="mm"/>
+   <box name="capsol_yoke_b2" x="2140" y="2140" z="1580.0" lunit="mm"/>
+   <cone name="capsol_yoke_c" rmin1="0" rmax1="670" rmin2="0" rmax2="670" z="1590.0" startphi="0" deltaphi="360" aunit="deg" lunit="mm"/>
+   <intersection name="capsol_yoke_s"><first ref="capsol_yoke_b1"/><second ref="capsol_yoke_b2"/><rotation name="capsol_yoke_rot" z="45" unit="deg"/></intersection>
+   <subtraction name="capsol_yoke"><first ref="capsol_yoke_s"/><second ref="capsol_yoke_c"/></subtraction>
+   <cone name="capsol_fix_plate1" rmin1="625" rmax1="850" rmin2="625" rmax2="850" z="50" startphi="13.5" deltaphi="18" aunit="deg" lunit="mm"/>
+   <cone name="capsol_fix_plate2" rmin1="625" rmax1="850" rmin2="625" rmax2="850" z="50" startphi="58.5" deltaphi="18" aunit="deg" lunit="mm"/>
+   <cone name="capsol_fix_plate3" rmin1="625" rmax1="850" rmin2="625" rmax2="850" z="50" startphi="103.5" deltaphi="18" aunit="deg" lunit="mm"/>
+   <cone name="capsol_fix_plate4" rmin1="625" rmax1="850" rmin2="625" rmax2="850" z="50" startphi="148.5" deltaphi="18" aunit="deg" lunit="mm"/>
+   <cone name="capsol_fix_plate5" rmin1="625" rmax1="850" rmin2="625" rmax2="850" z="50" startphi="193.5" deltaphi="18" aunit="deg" lunit="mm"/>
+   <cone name="capsol_fix_plate6" rmin1="625" rmax1="850" rmin2="625" rmax2="850" z="50" startphi="238.5" deltaphi="18" aunit="deg" lunit="mm"/>
+   <cone name="capsol_fix_plate7" rmin1="625" rmax1="850" rmin2="625" rmax2="850" z="50" startphi="283.5" deltaphi="18" aunit="deg" lunit="mm"/>
+   <cone name="capsol_fix_plate8" rmin1="625" rmax1="850" rmin2="625" rmax2="850" z="50" startphi="328.5" deltaphi="18" aunit="deg" lunit="mm"/>
+   <box name="capsol_yoke_ark_d_b1" x="928.0" y="50.0" z="320.0" lunit="mm"/>
+   <box name="capsol_yoke_ark_d_b2" x="614.0" y="50.0" z="320.0" lunit="mm"/>
+   <box name="capsol_yoke_ark_d_b3" x="614.0" y="50.0" z="320.0" lunit="mm"/>
+   <union name="capsol_yoke_ark_d_u1"><first ref="capsol_yoke_ark_d_b1"/><second ref="capsol_yoke_ark_d_b2"/><rotation name="capsol_yoke_ark_d_b1_rot" z="135" unit="deg"/><position name="capsol_yoke_ark_d_b1_pos" x="-663.404112294606" y="209.759451353934" z="0.0" unit="mm"/></union>
+   <union name="capsol_yoke_ark_d"><first ref="capsol_yoke_ark_d_u1"/><second ref="capsol_yoke_ark_d_b3"/><rotation name="capsol_yoke_ark_d_b2_rot" z="45" unit="deg"/><position name="capsol_yoke_ark_d_b2_pos" x="663.404112294606" y="209.759451353934" z="0.0" unit="mm"/></union>
+   <box name="capsol_yoke_ark_u_b1" x="928.0" y="50.0" z="320.0" lunit="mm"/>
+   <box name="capsol_yoke_ark_u_b2" x="614.0" y="50.0" z="320.0" lunit="mm"/>
+   <box name="capsol_yoke_ark_u_b3" x="614.0" y="50.0" z="320.0" lunit="mm"/>
+   <union name="capsol_yoke_ark_u_u1"><first ref="capsol_yoke_ark_u_b1"/><second ref="capsol_yoke_ark_u_b2"/><rotation name="capsol_yoke_ark_u_b1_rot" z="135" unit="deg"/><position name="capsol_yoke_ark_u_b1_pos" x="-663.404112294606" y="209.759451353934" z="0.0" unit="mm"/></union>
+   <union name="capsol_yoke_ark_u"><first ref="capsol_yoke_ark_u_u1"/><second ref="capsol_yoke_ark_u_b3"/><rotation name="capsol_yoke_ark_u_b2_rot" z="45" unit="deg"/><position name="capsol_yoke_ark_u_b2_pos" x="663.404112294606" y="209.759451353934" z="0.0" unit="mm"/></union>
+</solids>
+<structure>
+   <volume name="capsol_shield_eo"> <materialref ref="Air"/> <solidref ref="capsol_shield_eo"/> </volume>
+   <volume name="capsol_shield_ei"> <materialref ref="Air"/> <solidref ref="capsol_shield_ei"/> </volume>
+   <volume name="capsol_shield_01"> <materialref ref="Air"/> <solidref ref="capsol_shield_01"/> </volume>
+   <volume name="capsol_shield_02"> <materialref ref="Air"/> <solidref ref="capsol_shield_02"/> </volume>
+   <volume name="capsol_shield_03"> <materialref ref="Air"/> <solidref ref="capsol_shield_03"/> </volume>
+   <volume name="capsol_shield_04"> <materialref ref="Air"/> <solidref ref="capsol_shield_04"/> </volume>
+   <volume name="capsol_shield_05"> <materialref ref="Air"/> <solidref ref="capsol_shield_05"/> </volume>
+   <volume name="capsol_shield_06"> <materialref ref="Air"/> <solidref ref="capsol_shield_06"/> </volume>
+   <volume name="capsol_shield_07"> <materialref ref="Air"/> <solidref ref="capsol_shield_07"/> </volume>
+   <volume name="capsol_shield_08"> <materialref ref="Air"/> <solidref ref="capsol_shield_08"/> </volume>
+   <volume name="capsol_shield_09"> <materialref ref="Air"/> <solidref ref="capsol_shield_09"/> </volume>
+   <volume name="capsol_shield_10"> <materialref ref="Air"/> <solidref ref="capsol_shield_10"/> </volume>
+   <volume name="capsol_shield_11"> <materialref ref="Air"/> <solidref ref="capsol_shield_11"/> </volume>
+   <volume name="capsol_shield_12"> <materialref ref="Air"/> <solidref ref="capsol_shield_12"/> </volume>
+   <volume name="capsol_shield_13"> <materialref ref="Air"/> <solidref ref="capsol_shield_13"/> </volume>
+   <volume name="capsol_shield_14"> <materialref ref="Air"/> <solidref ref="capsol_shield_14"/> </volume>
+   <volume name="capsol_shield_15"> <materialref ref="Air"/> <solidref ref="capsol_shield_15"/> </volume>
+   <volume name="capsol_shield_16"> <materialref ref="Air"/> <solidref ref="capsol_shield_16"/> </volume>
+   <volume name="capsol_shield_17"> <materialref ref="Air"/> <solidref ref="capsol_shield_17"/> </volume>
+   <volume name="capsol_shield_18"> <materialref ref="Air"/> <solidref ref="capsol_shield_18"/> </volume>
+   <volume name="capsol_shield_19"> <materialref ref="Air"/> <solidref ref="capsol_shield_19"/> </volume>
+   <volume name="capsol_shield_20"> <materialref ref="Air"/> <solidref ref="capsol_shield_20"/> </volume>
+   <volume name="capsol_shield_21"> <materialref ref="Air"/> <solidref ref="capsol_shield_21"/> </volume>
+   <volume name="capsol_shield_22"> <materialref ref="Air"/> <solidref ref="capsol_shield_22"/> </volume>
+   <volume name="capsol_outer"> <materialref ref="Air"/> <solidref ref="capsol_outer"/> </volume>
+   <volume name="capsol_endcap_du"> <materialref ref="Air"/> <solidref ref="capsol_endcap_du"/> </volume>
+   <volume name="capsol_endcap_dd"> <materialref ref="Air"/> <solidref ref="capsol_endcap_dd"/> </volume>
+   <volume name="capsol_endcap_uu"> <materialref ref="Air"/> <solidref ref="capsol_endcap_uu"/> </volume>
+   <volume name="capsol_endcap_ud"> <materialref ref="Air"/> <solidref ref="capsol_endcap_ud"/> </volume>
+   <volume name="capsol_knob_du1"> <materialref ref="Air"/> <solidref ref="capsol_knob_du1"/> </volume>
+   <volume name="capsol_knob_du2"> <materialref ref="Air"/> <solidref ref="capsol_knob_du2"/> </volume>
+   <volume name="capsol_knob_du3"> <materialref ref="Air"/> <solidref ref="capsol_knob_du3"/> </volume>
+   <volume name="capsol_knob_dd1"> <materialref ref="Air"/> <solidref ref="capsol_knob_dd1"/> </volume>
+   <volume name="capsol_knob_dd2"> <materialref ref="Air"/> <solidref ref="capsol_knob_dd2"/> </volume>
+   <volume name="capsol_knob_dd3"> <materialref ref="Air"/> <solidref ref="capsol_knob_dd3"/> </volume>
+   <volume name="capsol_knob_uu1"> <materialref ref="Air"/> <solidref ref="capsol_knob_uu1"/> </volume>
+   <volume name="capsol_knob_uu2"> <materialref ref="Air"/> <solidref ref="capsol_knob_uu2"/> </volume>
+   <volume name="capsol_knob_uu3"> <materialref ref="Air"/> <solidref ref="capsol_knob_uu3"/> </volume>
+   <volume name="capsol_knob_ud1"> <materialref ref="Air"/> <solidref ref="capsol_knob_ud1"/> </volume>
+   <volume name="capsol_knob_ud2"> <materialref ref="Air"/> <solidref ref="capsol_knob_ud2"/> </volume>
+   <volume name="capsol_knob_ud3"> <materialref ref="Air"/> <solidref ref="capsol_knob_ud3"/> </volume>
+   <volume name="capsol_port1"> <materialref ref="Air"/> <solidref ref="capsol_port1"/> </volume>
+   <volume name="capsol_port2"> <materialref ref="Air"/> <solidref ref="capsol_port2"/> </volume>
+   <volume name="capsol_port3"> <materialref ref="Air"/> <solidref ref="capsol_port3"/> </volume>
+   <volume name="capsol_port4"> <materialref ref="Air"/> <solidref ref="capsol_port4"/> </volume>
+   <volume name="capsol_port5"> <materialref ref="Air"/> <solidref ref="capsol_port5"/> </volume>
+   <volume name="capsol_port6"> <materialref ref="Air"/> <solidref ref="capsol_port6"/> </volume>
+   <volume name="capsol_yoke"> <materialref ref="Air"/> <solidref ref="capsol_yoke"/> </volume>
+   <volume name="capsol_fix_plate1"> <materialref ref="Air"/> <solidref ref="capsol_fix_plate1"/> </volume>
+   <volume name="capsol_fix_plate2"> <materialref ref="Air"/> <solidref ref="capsol_fix_plate2"/> </volume>
+   <volume name="capsol_fix_plate3"> <materialref ref="Air"/> <solidref ref="capsol_fix_plate3"/> </volume>
+   <volume name="capsol_fix_plate4"> <materialref ref="Air"/> <solidref ref="capsol_fix_plate4"/> </volume>
+   <volume name="capsol_fix_plate5"> <materialref ref="Air"/> <solidref ref="capsol_fix_plate5"/> </volume>
+   <volume name="capsol_fix_plate6"> <materialref ref="Air"/> <solidref ref="capsol_fix_plate6"/> </volume>
+   <volume name="capsol_fix_plate7"> <materialref ref="Air"/> <solidref ref="capsol_fix_plate7"/> </volume>
+   <volume name="capsol_fix_plate8"> <materialref ref="Air"/> <solidref ref="capsol_fix_plate8"/> </volume>
+   <volume name="capsol_yoke_ark_d"> <materialref ref="Air"/> <solidref ref="capsol_yoke_ark_d"/> </volume>
+   <volume name="capsol_yoke_ark_u"> <materialref ref="Air"/> <solidref ref="capsol_yoke_ark_u"/> </volume>
+   <volume name="world"> <materialref ref="Air"/> <solidref ref="world"/> <positionref ref="world_pos"/>
+      <physvol> <volumeref ref="capsol_shield_eo"/> <position name="capsol_shield_eo_pos" x="0" y="0" z="-605"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_ei"/> <position name="capsol_shield_ei_pos" x="0" y="0" z="-625"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_01"/> <position name="capsol_shield_01_pos" x="0" y="0" z="-525"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_02"/> <position name="capsol_shield_02_pos" x="0" y="0" z="-475"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_03"/> <position name="capsol_shield_03_pos" x="0" y="0" z="-425"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_04"/> <position name="capsol_shield_04_pos" x="0" y="0" z="-375"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_05"/> <position name="capsol_shield_05_pos" x="0" y="0" z="-325"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_06"/> <position name="capsol_shield_06_pos" x="0" y="0" z="-275"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_07"/> <position name="capsol_shield_07_pos" x="0" y="0" z="-225"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_08"/> <position name="capsol_shield_08_pos" x="0" y="0" z="-175"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_09"/> <position name="capsol_shield_09_pos" x="0" y="0" z="-125"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_10"/> <position name="capsol_shield_10_pos" x="0" y="0" z="-075"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_11"/> <position name="capsol_shield_11_pos" x="0" y="0" z="-025"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_12"/> <position name="capsol_shield_12_pos" x="0" y="0" z="+025"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_13"/> <position name="capsol_shield_13_pos" x="0" y="0" z="+075"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_14"/> <position name="capsol_shield_14_pos" x="0" y="0" z="+125"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_15"/> <position name="capsol_shield_15_pos" x="0" y="0" z="+175"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_16"/> <position name="capsol_shield_16_pos" x="0" y="0" z="+225"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_17"/> <position name="capsol_shield_17_pos" x="0" y="0" z="+275"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_18"/> <position name="capsol_shield_18_pos" x="0" y="0" z="+325"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_19"/> <position name="capsol_shield_19_pos" x="0" y="0" z="+375"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_20"/> <position name="capsol_shield_20_pos" x="0" y="0" z="+425"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_21"/> <position name="capsol_shield_21_pos" x="0" y="0" z="+475"/></physvol>
+      <physvol> <volumeref ref="capsol_shield_22"/> <position name="capsol_shield_22_pos" x="0" y="0" z="+525"/></physvol>
+      <physvol> <volumeref ref="capsol_outer"/> <position name="capsol_outer_pos" x="0" y="0" z="45.0"/></physvol>
+      <physvol> <volumeref ref="capsol_endcap_du"/> <position name="capsol_endcap_du_pos" x="0" y="0" z="-705.0"/></physvol>
+      <physvol> <volumeref ref="capsol_endcap_dd"/> <position name="capsol_endcap_dd_pos" x="0" y="0" z="-733.0"/></physvol>
+      <physvol> <volumeref ref="capsol_endcap_uu"/> <position name="capsol_endcap_uu_pos" x="0" y="0" z="785.0"/></physvol>
+      <physvol> <volumeref ref="capsol_endcap_ud"/> <position name="capsol_endcap_ud_pos" x="0" y="0" z="767.5"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_du1"/> <position name="capsol_knob_du1_pos" x="0" y="545.0" z="-703"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_du2"/> <position name="capsol_knob_du2_pos" x="-471.9838" y="-272.5" z="-703"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_du3"/> <position name="capsol_knob_du3_pos" x="+471.9838" y="-272.5" z="-703"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_dd1"/> <position name="capsol_knob_dd1_pos" x="0" y="545.0" z="-746"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_dd2"/> <position name="capsol_knob_dd2_pos" x="-471.9838" y="-272.5" z="-746"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_dd3"/> <position name="capsol_knob_dd3_pos" x="+471.9838" y="-272.5" z="-746"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_uu1"/> <position name="capsol_knob_uu1_pos" x="0" y="545.0" z="846"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_uu2"/> <position name="capsol_knob_uu2_pos" x="-471.9838" y="-272.5" z="846"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_uu3"/> <position name="capsol_knob_uu3_pos" x="+471.9838" y="-272.5" z="846"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_ud1"/> <position name="capsol_knob_ud1_pos" x="0" y="545.0" z="798"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_ud2"/> <position name="capsol_knob_ud2_pos" x="-471.9838" y="-272.5" z="798"/></physvol>
+      <physvol> <volumeref ref="capsol_knob_ud3"/> <position name="capsol_knob_ud3_pos" x="+471.9838" y="-272.5" z="798"/></physvol>
+      <physvol> <volumeref ref="capsol_port1"/> <position name="capsol_port1_pos" x="100.0" y="175.0" z="-818.0"/></physvol>
+      <physvol> <volumeref ref="capsol_port2"/> <position name="capsol_port2_pos" x="-137.002774934934" y="0.0" z="-865.001506849154"/><rotation name="capsol_port2_rot" x="0.0" y="-8.99999430495698" unit="deg"/> </physvol>
+      <physvol> <volumeref ref="capsol_port3"/> <position name="capsol_port3_pos" x="-150.0" y="-259.8076" z="-852.0"/></physvol>
+      <physvol> <volumeref ref="capsol_port4"/> <position name="capsol_port4_pos" x="216.156426675448" y="-328.609846415373" z="-954.352438611969"/><rotation name="capsol_port4_rot" x="18.9999873401372" y="9.84478888419375" unit="deg"/> </physvol>
+      <physvol> <volumeref ref="capsol_port5"/> <position name="capsol_port5_pos" x="-362.907732813294" y="0.0" z="898.228161960394"/><rotation name="capsol_port5_rot" x="180.0" y="-22.0000077401778" unit="deg"/> </physvol>
+      <physvol> <volumeref ref="capsol_port6"/> <position name="capsol_port6_pos" x="-216.486328442835" y="258.395452147205" z="854.998858491405"/><rotation name="capsol_port6_rot" x="194.548244832596" y="-13.7707206105563" unit="deg"/> </physvol>
+      <physvol> <volumeref ref="capsol_yoke"/> <position name="capsol_yoke_pos" x="0" y="0" z="0"/></physvol>
+      <physvol> <volumeref ref="capsol_fix_plate1"/> <position name="capsol_fix_plate1_pos" x="0" y="0" z="805"/></physvol>
+      <physvol> <volumeref ref="capsol_fix_plate2"/> <position name="capsol_fix_plate2_pos" x="0" y="0" z="805"/></physvol>
+      <physvol> <volumeref ref="capsol_fix_plate3"/> <position name="capsol_fix_plate3_pos" x="0" y="0" z="805"/></physvol>
+      <physvol> <volumeref ref="capsol_fix_plate4"/> <position name="capsol_fix_plate4_pos" x="0" y="0" z="805"/></physvol>
+      <physvol> <volumeref ref="capsol_fix_plate5"/> <position name="capsol_fix_plate5_pos" x="0" y="0" z="805"/></physvol>
+      <physvol> <volumeref ref="capsol_fix_plate6"/> <position name="capsol_fix_plate6_pos" x="0" y="0" z="805"/></physvol>
+      <physvol> <volumeref ref="capsol_fix_plate7"/> <position name="capsol_fix_plate7_pos" x="0" y="0" z="805"/></physvol>
+      <physvol> <volumeref ref="capsol_fix_plate8"/> <position name="capsol_fix_plate8_pos" x="0" y="0" z="805"/></physvol>
+      <physvol> <volumeref ref="capsol_yoke_ark_d"/> <position name="capsol_yoke_ark_d_pos" x="0.0" y="-1095.0" z="-540.0"/></physvol>
+      <physvol> <volumeref ref="capsol_yoke_ark_u"/> <position name="capsol_yoke_ark_u_pos" x="0.0" y="-1095.0" z="620.0"/></physvol>
+   </volume>
+</structure>
+<setup name="Default" version="1.0">
+  <world ref="world"/>
+</setup>
+</gdml>
